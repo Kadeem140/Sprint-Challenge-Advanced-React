@@ -1,13 +1,13 @@
 import React from 'react';
-import axios from 'axios'
 
 
-
-export default function Players (props){ 
+export default function PlayersData (props){ 
     console.log('Players', props)
            return(    
                 <div>
-                    <span>{props.player.name}</span>
+                    <h4>{props.player.name}</h4>
+                    <span>{props.player.country}</span>
+                    <p>{props.player.id}</p>
     
                 </div>
            );

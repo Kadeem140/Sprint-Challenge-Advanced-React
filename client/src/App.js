@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import Players from './components/Players'
+import PlayersData from './components/Players';
+import Choose from './components/Choose'
 
 export default class App extends Component {
       constructor(){
@@ -28,8 +29,9 @@ export default class App extends Component {
       render(){
             return (
               <div>
+              <Choose order={this.state.order} setOrder={ number => this.setState({ order: number}) } />
                 {this.state.player.map(play => (
-                  <Players
+                  <PlayersData
                           key={play.id} 
                           player={play} 
                           order={this.state.order} 
