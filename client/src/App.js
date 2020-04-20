@@ -29,13 +29,15 @@ export default class App extends Component {
       render(){
             return (
               <div>
-              <Choose order={this.state.order} setOrder={ number => this.setState({ order: number}) } />
-                {this.state.player.map(play => (
-                  <PlayersData
-                          key={play.id} 
-                          player={play} 
-                          order={this.state.order} 
-                          />
+                <h1>Women's Athlete Application</h1>
+
+                <Choose order={this.state.order} setOrder={ number => this.setState({ order: number}) } />
+                  {this.state.player.map(play => (
+                    <PlayersData
+                            key={play.id} 
+                            player={play} 
+                            order={this.state.order} 
+                            />
                 ))}
                 
               </div>

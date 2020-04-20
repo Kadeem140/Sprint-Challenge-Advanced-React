@@ -13,7 +13,7 @@
   "scripts": {
     "start": "set PORT=9999 && react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --no-watchman",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
