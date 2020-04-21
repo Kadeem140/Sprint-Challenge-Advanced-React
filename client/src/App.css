@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+
+.Dark-mode {
+      color: #fff;
+      background-color: #282c34;
+}
+
+.navbar {
+  background-color: #1f2022;
+  border: none;
+}
+
+.buttonStyle{
+  background-color: blue;
+}
